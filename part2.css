@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2b303a;
+  font-family: "Work Sans", sans-serif;
+}
+.socialmedia {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  padding-inline-start: 0px;
+}
+a {
+  text-decoration: none;
+  color: #ff934f;
+}
+.socialmedia ul li a,
+li {
+  list-style: none;
+  margin: 0px 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+i {
+  color: white;
+}
+/* Navbar */
+.navcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navcontainer img {
+  width: 50px;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 17px;
+}
+.navcontainer nav ul {
+  display: inline-flex;
+  margin: 50px;
+}
+
+.navcontainer nav ul li a,
+li {
+  list-style: none;
+  margin: 0px 15px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+#selected {
+  color: #ff934f;
+}
+.navcontainer nav ul li a:hover {
+  color: #08a4bd;
+}
+.text {
+  flex-basis: 70%;
+  margin-right: 40px;
+}
+
+/* Media Query */
+@media (max-width: 750px) {
+  .calicocontainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .text {
+    margin-right: 0;
+  }
+
+  .text p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .navcontainer {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    justify-content: center;
+    background-color: #9882ac;
+    z-index: 1;
+    height: 100px;
+  }
+  .navcontainer nav ul li {
+    margin: 0px 7px;
+  }
+  footer {
+    height: 100px;
+    width: 100%;
+  }
+}
+
+/* Main Page */
+.main {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: flex-start;
+}
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 38px;
+  letter-spacing: 2px;
+}
+h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+p,
+blockquote {
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  line-height: 25px;
+}
+blockquote {
+  font-size: large;
+}
+hr {
+  width: 80%;
+  border-radius: 50%;
+  margin-top: 100px;
+  background-color: white;
+}
+.mainimg {
+  padding-top: 20px;
+  margin: 10px;
+  text-align: center;
+  transition: all 0.3s ease-in-out 0s;
+}
+.maincatimg,
+.calicocatimg {
+  border: 1px #ff934f solid;
+  border-radius: 50px;
+}
+.maincatimg:hover,
+.calicocatimg:hover {
+  cursor: default;
+  transform: rotate(20deg);
+  transition: all 0.3s ease-in-out 0s;
+}
+.calicocatimg {
+  width: 300px;
+  height: auto;
+  margin-top: 20pxll;
+}
+/* NEW SECTION */
+.calicocontainer {
+  align-items: center;
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+label {
+  color: white;
+}
+.formgroup {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+button {
+  margin-bottom: 25px;
+}
